@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="ポートフォリオ.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <ul class="gnav">
+            <li><img src="LOGO.PNG" alt=""></li>
+            <li><a href="#hello">始めての方へ</a></li>
+            <li><a href="#"><span id="myWorks">myworks</span> </a>
+                <ul class="gnav2">
+                    <!-- <li><a href="../HTML ver1/index.html">あんぱんまんサイト</a></li> -->
+                    <li><a href="../HTML 聖杯レイアウト/index2.html">wiki風サイト</a></li>
+                    <li><a href="https://hiro-jap.github.io/tetorisu.github.io/">テトリス</a></li>
+                    <li><a href="../スライドショー/スライドショー2.html">スライドショー</a></li>
+                    <!-- <li><a href="../バグ/バグ.html">バグ</a></li> -->
+                    <!-- <li><a href="../ポートフォリオ2.html">fff</a></li> -->
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <img src="未来.jpg" alt="">
+            <h1>my homepage へようこそ</h1>
+            <p class="p1">突然ですが・・・</p>
+            <div class="circle">
+                <span>わたしの<br>"仲間"に</br>なりませんか？？</span>
+            </div>
+            <form action="#">
+                <input type="email" id="input-email" class="email" name="email"  placeholder="メールアドレスを入力"　pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="user@example.jpの形式で入力してください">
+                <button type="submit"  class="email" id="wel-email"><span>ようこそ</span>
+            </form>
+        </div>
+    </main>
+
+    <div class="Q">
+        <h1 class="hello" id="hello">はじめまして</h1>
+        <ul>
+            <li onclick="liClick1()">
+                <button>このページについて</button>
+                <!-- <svg>#</svg> -->
+                <div class="open1">
+                    本ページはポートフォリオとなっています。本ページの管理者が自由に作ったサイトですので、閲覧される意味はないと思われます。
+                </div>
+            </li>
+
+            <li onclick="liClick2()">
+                <button>製作者について</button>
+                <!-- <svg>#</svg> -->
+                <div class="open2">
+                    芦屋大主席卒業→日系IT→コンサル→GAFAの経歴を持つ。現在はフリーランスのため、暇つぶしでwebサイトを作成。
+                </div>
+            </li>
+
+            <li onclick="liClick3()">
+                <button>つくったものはどこにありますか？</button>
+                <!-- <svg>#</svg> -->
+                <div class="open3">
+                    画面最上段のメニューバー:<a href="#myWorks" class="myWorkPlace">"my works"</a>からとぶことができます。一部著作権が危うく、公開を控えたものがあるため作品は少なめ。
+                </div>
+            </li>
+
+            <li onclick="liClick4()">
+                <button>サイトの閲覧にお金はかかりますか？？</button>
+                <!-- <svg>#</svg> -->
+                <div class="open4">
+                本サイトの閲覧には料金がかかります。スマホ、タブレット、スマートテレビ、パソコン、ストリーミングデバイスなどから閲覧できます。本サイトへの訪問時から閲覧時間が自動で計算され、後ほど<span>請求</span>いたします。
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    <footer>
+
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <script src="ポートフォリオ.js"></script>
+</body>
+</html>
