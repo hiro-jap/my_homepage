@@ -1,0 +1,218 @@
+body{
+    background-color:black;
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+header img{
+    position: relative;
+    z-index: 1;
+    width:60px;
+    height: auto;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.gnav{/*ヘッダー親要素*/
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 500px;
+    height: auto;
+}
+
+.gnav li{
+    position: relative;
+}
+
+.gnav li ul{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter:(5px);
+    padding: 0 0 0 1em;
+    width:15em;
+}
+
+.gnav li li{
+    height: 0;
+    display: none;
+}
+
+.gnav li:hover > ul > li{
+    height:auto;
+    display: block;
+    padding:1.5em 0 0 0 ;
+    border-bottom: dotted 2px white;
+    color: black;
+}
+
+.gnav li:hover >a {
+    color: rgb(216, 205, 112);
+}
+
+/* main */
+.welcome{
+    max-width: 1280px;
+}
+
+.welcome img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.welcome h1{/*題名*/
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    color: rgb(191, 204, 95);
+    font-size: 300%;
+}
+
+.p1{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: large;
+}
+
+.circle{
+    position: relative;
+    width:30%;
+    height:30%;
+    padding-top:30%;
+    border-radius: 50%;
+    background-color: blue;
+
+}
+
+.circle span{/*円の中の文字*/
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    font-size: 1.3rem;
+    width:80%
+}
+
+.email{
+    height: 3em;
+    width:auto;
+
+}
+
+#wel-email{
+    color:white;
+    background-color: #e50914;
+    cursor:pointer;
+    border:none;
+    font-size: medium;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right:10px;
+    /* font-weight: 400; */
+}
+#input-email{
+    width:50%;
+}
+
+.welcome form{
+    display: flex;
+    justify-content: center;
+}
+
+/* はじめまして以降 */
+.Q h1{
+    display:flex;
+    justify-content: center;
+    margin:3em 0 0 0;
+}
+
+.myWorkPlace{
+    /* text-decoration: none; */
+    color:white;
+    font-weight: 600;
+}
+.Q ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Q li{
+    margin:0 0 8px 0;
+    width:70%;
+}
+.Q button{
+    width: 100%;
+    text-align:-webkit-match-parent;
+    background-color:#303030;
+    border:none;
+    color: white;
+    font-size: 2.5vw;
+    outline: none;
+    cursor: pointer;
+}
+
+/* アコーディオンメニュー */
+.open1{
+    margin:3px 0 0 0;
+    display: none;
+    clear:both;
+    background-color:#303030;
+    padding:1.2em;
+    font-size: 1.625em;
+}
+
+.open2{
+    margin:3px 0 0 0;
+    display: none;
+    clear:both;
+    background-color:#303030;
+    padding:1.2em;
+    font-size: 1.625em;
+}
+
+.open3{
+    margin:3px 0 0 0;
+    display: none;
+    clear:both;
+    background-color:#303030;
+    padding:1.2em;
+    font-size: 1.625em;
+}
+
+.open4{
+    margin:3px 0 0 0;
+    display: none;
+    clear:both;
+    background-color:#303030;
+    padding:1.2em;
+    font-size: 1.625em;
+}
+
+.open4 span{
+    font-size: 1.5em;
+    font-weight: 600;
+    color:rgb(199, 35, 35);
+}
+
+
+#p1{
+    margin:1em 0 0 0;
+}
+#p2{
+    margin:0 0 0 0;
+}
