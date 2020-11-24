@@ -1,3 +1,4 @@
+
 body{
     background-color:black;
     color: white;
@@ -53,7 +54,7 @@ header a{
 }
 
 .gnav li:hover >a {
-    color: rgb(216, 205, 112);
+    color: rgb(211, 48, 48);
 }
 
 /* main */
