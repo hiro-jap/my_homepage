@@ -33,6 +33,18 @@ gsap.timeline({
 })
 .from(".hello",{y:-100,opacity:0});
 
+const $welEmail = document.getElementById("wel-email");
+const $inputEmail = document.getElementById("input-email");
+
+$welEmail.addEventListener("click",function(){
+    if($inputEmail.value == ""){
+        alert("メールアドレスを入力してください")
+    }else{
+        alert("登録しました！");
+    }
+})
+
+
 let $open1 = document.getElementsByClassName("open1")
 function liClick1(){
         if($open1[0].style.display == "none"){
